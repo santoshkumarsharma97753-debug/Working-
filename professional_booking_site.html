@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Companion Booking Service</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f5f5}
+header{background:#222;color:#fff;padding:30px;text-align:center}
+section{max-width:900px;margin:auto;padding:20px}
+.card{background:#fff;padding:20px;border-radius:10px;margin:15px 0}
+input,select,textarea,button{width:100%;padding:12px;margin:6px 0;box-sizing:border-box}
+button{background:#222;color:#fff;border:none;border-radius:6px}
+.price{display:flex;gap:10px;flex-wrap:wrap}
+.price div{background:#fff;padding:15px;border-radius:10px;flex:1;min-width:150px;text-align:center}
+footer{text-align:center;padding:20px}
+</style>
+</head>
+<body>
+<header>
+<h1>Companion Booking Service</h1>
+<p>Book a companion for shopping, movies, events and outings.</p>
+</header>
+
+<section>
+<div class="price">
+<div><h3>2 Hours</h3><p>₹3000</p></div>
+<div><h3>3 Hours</h3><p>₹4000</p></div>
+<div><h3>4 Hours</h3><p>₹5000</p></div>
+</div>
+
+<div class="card">
+<h2>Booking Form</h2>
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Mobile Number" required>
+<input type="text" placeholder="Location" required>
+<input type="date" required>
+<input type="time" required>
+
+<select>
+<option>2 Hours - ₹3000</option>
+<option>3 Hours - ₹4000</option>
+<option>4 Hours - ₹5000</option>
+</select>
+
+<select>
+<option>Shopping</option>
+<option>Movie</option>
+<option>Travel / Outing</option>
+<option>Event Partner</option>
+<option>Conversation</option>
+<option>Other</option>
+</select>
+
+<textarea placeholder="Additional Details"></textarea>
+
+<select>
+<option>Cash</option>
+<option>UPI</option>
+<option>Google Pay</option>
+</select>
+
+<button type="submit">Book Now</button>
+</form>
+</div>
+</section>
+
+<footer>
+Contact: Your Number Here
+</footer>
+</body>
+</html>
